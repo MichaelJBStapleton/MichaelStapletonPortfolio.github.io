@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Google Business Intelligence Capstone</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Me</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Google Business Intelligence Capstone</h1>
+							<p><b>Tools Used:</b> SQL (BigQuery, Dataflow) and Tableau</p>
+							<span class="image right"><img src="images/bi2.JPG" alt="" /></span>
+							<p><b>Scenario:</b> As part of my Google Business Intelligence Specialization I completed a capstone project; applying the technical and soft skills I learned during coursework to address a mock scenario. My project was to assist the Google Fiber customer call center team on a business intelligence project, to gain insight into customer satisfaction and trends in repeat callers.</p>  
+							<p>Specifically, my role was to create a dashboard to help the customer call center team identify trends in customer activity and monitor project outcomes in the long term.</p>  
+							<p><b>Action:</b> I consulted with stakeholders to review the business scenario and develop project planning documents, then created an ETL pipeline to support a reporting table. Finally, I developed a dashboard based on project requirements.</p>
+							<h2>Technical Walkthrough</h2>
+							<p><b>1.</b> After completing Google's “Foundations of Business Intelligence” course, I reviewed project outlines and stakeholder communications to produce three <b>project planning documents</b>. These documents detailed all project requirements, the metrics and charts needed to meet those requirements, and an initial mockup of the dashboard.</p>
+							<p><b>2.</b> Having solidified those project planning documents, I then needed to get my hands on the data and finalize a reporting table. I created an <b>ETL pipeline</b> using <b style="color:rgba(140, 74, 228, 0.592);">SQL</b>(Big Query) to vet and merge multiple datasets into one target table. This was achieved through a pretty simple SQL script below: </p>
+							<pre><code>
+3.	SELECT*
+4.	FROM`google_fiber_MJBS.market_1`
+5.	UNION ALL
+6.	SELECT*
+7.	FROM`google_fiber_MJBS.market_2`
+8.	UNION ALL
+9.	SELECT*
+10.	FROM`google_fiber_MJBS.market_3`
+							</code></pre>
+							<span class="image left"><img src="images/bi1.JPG" alt="" /></span>
+							<p><b>3.</b> Having merged my data into one target table, I finally needed to create the <b>dashboard</b> itself. I connected my target table to <b style="color:rgba(69, 126, 233, 0.592);">Tableau</b>, created the charts based on stakeholder requirements, then compiled everything in one dashboard view. </p> 
+							<p> One of the project requirements was to promote user <b>accessibility</b> by incorporating features such as text-to-speech. I incorporated these accessibility elements and finalized my dashboard. </p>
+							<h2>Reflection</h2>
+							<p>As this was a mock scenario, there weren't any real business outcomes associated with this project. That being said, this was a valuable capstone project to complete. I was able to apply the foundational techniques I learned during my course work and complete and entire project from end to end. Through this all I gained experience with new skills, such as data modelling, and gained a holistic view of all that goes in to a successful BI project. </p>							
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://github.com/MichaelJBStapleton/MichaelStapletonPortfolio.github.io" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/michael-stapleton-354420223/" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Michael Stapleton. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
